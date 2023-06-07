@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UDEMIG</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!--navbar start-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Udemig</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" aria-current="page" href="#learn">What will you learn?</a>
+                    <a class="nav-link" href="#questions">Questions</a>
+                    <a class="nav-link" href="#instructors">Instructors</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--navbar end-->
+
+    <!--first description field start-->
+    <section class="bg-dark text-light mb-5 p-5 p-lg-0 pt-lg-5 text-center text-sm-center text-md-start">
+        <div class="container">
+            <div class="d-sm-flex align-items center justify-content-between gap-sm-5">
+                <div>
+                    <h1><span class="text-warning">React</span> Developer</h1>
+                    <p class="lead my-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <button class="btn btn-success btn-lg mb-3" data-bs-toggle="modal" data-bs-target="#enroll">Sign
+                        up</button>
+                </div>
+                <img src="images/ios.jpeg" alt="" class="img-fluid w-50 d-none d-sm-block rounded-circle">
+            </div>
+        </div>
+    </section>
+
+    <!--enroll modal start-->
+
+    <div class="modal fade" id="enroll" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Sign up</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="lead">Fill out this form and we will get back to you.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="first-name" class="col-form-label">First Name:</label>
+                            <input type="text" class="form-control" id="first-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="last-name" class="col-form-label">Last Name:</label>
+                            <input type="text" class="form-control" id="last-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="e-mail" class="col-form-label">Mail:</label>
+                            <input type="email" class="form-control" id="e-mail">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--enroll modal end-->
+    <!--first description field end-->
+
+    <!--get news field start-->
+    <section class="bg-success-subtle p-5">
+        <div class="container text-dark">
+            <h3 class="mb-3">Sign up</h3>
+            <p class="small">If you want to stay informed about the developments, please provide your email address.</p>
+            <div class="input-group">
+                <input type="email" class="form-control">
+                <button class="btn btn-dark btn-lg">Submit</button>
+            </div>
+        </div>
+    </section>
+    <!-- get news field end-->
+
+    <!--education modals start-->
+    <section class="p-5" id="learn">
+        <div class="container">
+            <div class="row text-center g-4">
+                <!--card 1 start-->
+                <div class="col-md">
+                    <div class="card bg-dark text-light pt-3">
+                        <h1 class="mb-1">
+                            <i class="fa-solid fa-laptop"></i>
+                        </h1>
+                        <div class="card-body">
+                            <h3 class="card-title">Online</h3>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <a href="#" class="btn btn-dark btn-outline-success">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!--card 1 end-->
+
+                <!--card 2 start-->
+                <div class="col-md">
+                    <div class="card bg-secondary text-light pt-3">
+                        <h1 class="mb-1">
+                            <i class="fa-solid fa-user"></i>
+                        </h1>
+                        <div class="card-body">
+                            <h3 class="card-title">Cross</h3>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <a href="#" class="btn btn-dark btn-outline-success">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!--card 2 end-->
+
+                <!--card 3 start-->
+                <div class="col-md">
+                    <div class="card bg-dark text-light p-3">
+                        <h1 class="mb-1">
+                            <i class="fa-solid fa-user-group"></i>
+                        </h1>
+                        <div class="card-body">
+                            <h3 class="card-title">Face-to-face</h3>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <a href="#" class="btn btn-dark btn-outline-success">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <!--card 3 end-->
+            </div>
+        </div>
+    </section>
+    <!--education modals end-->
+
+    <!--education introduction 1 start-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md">
+                    <img src="images/based.png" alt="">
+                </div>
+                <div class="col-md p-5">
+                    <h2>Learn The Basics</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s.</p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--education introduction 1 end-->
+
+    <!--education introduction 2 start-->
+    <section class="p-5 bg-dark ">
+        <div class="container text-light">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md p-5">
+                    <h2>Learn React</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s.</p>
+                    <a href="#" class="btn btn-light mt-3">
+                        <i class="fa-solid fa-chevron-right"></i>
+                        Read More
+                    </a>
+                </div>
+                <div class="col-md">
+                    <img src="images/react.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--education introduction 2 end-->
+
+    <!--questions field start-->
+    <section class="p-5" id="questions">
+        <div class="container">
+            <h2 class="text-center m-4">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <!--item 1-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Instructors
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta,
+                            dicta temporibus esse dolore illo sequi itaque! Excepturi error nemo odit illo molestias sit
+                            animi eum. Natus sint laborum, doloribus eos molestias aliquid. Veniam tenetur vero quod hic
+                            laudantium inventore iusto asperiores. Similique dignissimos amet temporibus excepturi quo
+                            voluptate esse beatae?</div>
+                    </div>
+                </div>
+
+                <!--item 2-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Working Hours
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore,
+                            corrupti!</div>
+                    </div>
+                </div>
+
+                <!--item 3-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Graduates
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Reprehenderit est amet aut ducimus iusto, sed molestiae delectus vel velit quibusdam earum
+                            minima provident soluta. Neque, beatae exercitationem laboriosam libero minima cum? Odio
+                            possimus nostrum quae expedita officia ex ullam eos.</div>
+                    </div>
+                </div>
+
+                <!--item 4-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            Location
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eius
+                            fugiat voluptate sit, tempora dolores.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--questions field end-->
+
+    <!--instructors start-->
+    <section class="p-5 bg-success-subtle" id="instructors">
+        <div class="container">
+            <h2 class="text-center textlight">Instructors</h2>
+            <!--instructor 1 start-->
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="images/person.jpeg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title">Mary Gary</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+                                cupiditate similique velit officiis maxime incidunt soluta cum, porro placeat debitis.
+                            </p>
+                            <i class="fa-brands fa-instagram mx-1"></i>
+                            <i class="fa-brands fa-facebook mx-1"></i>
+                            <i class="fa-brands fa-linkedin mx-1"></i>
+                            <i class="fa-brands fa-github mx-1"></i>
+                        </div>
+                    </div>
+                </div>
+                <!--instructor 1 end-->
+
+                <!--instructor 2 start-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-light">
+
+                        <div class="card-body text-center">
+                            <img src="images/person.jpeg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title">Jane Carol</h3>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt,
+                                voluptas quidem corporis quia laudantium, quis mollitia, consectetur aliquid id quo
+                                velit eligendi omnis illo laboriosam exercitationem eos atque reprehenderit? Iusto.</p>
+                            <i class="fa-brands fa-instagram mx-1"></i>
+                            <i class="fa-brands fa-facebook mx-1"></i>
+                            <i class="fa-brands fa-linkedin mx-1"></i>
+                            <i class="fa-brands fa-github mx-1"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--instructor 2 end-->
+
+                <!--instructor 3 start-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card bg-light">
+                        <div class="card-body text-center">
+                            <img src="images/person.jpeg" class="rounded-circle mb-3" alt="">
+                            <h3 class="card-title">Eliz Hayes</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                                deleniti, nesciunt doloribus ducimus laboriosam minima.</p>
+                            <i class="fa-brands fa-instagram mx-1"></i>
+                            <i class="fa-brands fa-facebook mx-1"></i>
+                            <i class="fa-brands fa-linkedin mx-1"></i>
+                            <i class="fa-brands fa-github mx-1"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!--instructor 3 end-->
+
+            </div>
+        </div>
+    </section>
+    <!--instructors end-->
+
+    <!--contact start-->
+    <section class="p-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md">
+                    <h1 class="text-center m-4">Contact Information</h1>
+                    <ul class="list-group list-group-flush lead">
+                        <li class="list-group-item">
+                            <span class="fw-bold">Country:</span> Sweden
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Number:</span> 07777-055-00222
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Mail: </span> info@udemig.dev
+                        </li>
+                        <li class="list-group-item">
+                            <span class="fw-bold">Adress:</span> Stockholm/Sweden
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4070.9509552941126!2d18.061196093579113!3d59.3250152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77cab5eb974d%3A0x463a46ce4246168c!2sStortorget!5e0!3m2!1sen!2str!4v1685633952196!5m2!1sen!2str"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--contact end-->
+
+    <!--footer start-->
+    <section class="bg-dark p-5 text-light text-center position-relative">
+        <div class="container">
+            <div class="lead"> Copyright &copy; Udemig 2023 All Rights Reserved
+                <a href="#" class="posiiton-absolute bottom-0 end-0 p-5">
+                    <i class="fa-solid fa-circle-chevron-up text-success"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--footer end-->
+</body>
+
+</html>
